@@ -133,36 +133,17 @@
                 <aside class="sidebar" id="sidebar">
                     <div class="filter-section">
                         <h2 class="filter-heading">CATEGORY</h2>
-                        <div class="filter-options" id="categoryFilters">
+                        <div class="filter-options" id="categoriesContainer">
                             <!-- Categories will be loaded here -->
                         </div>
+                        <button class="clear-filter-btn" id="clearDesktopFilters">Clear filters</button>
                     </div>
 
                     <div class="filter-section">
                         <h2 class="filter-heading">PRICE</h2>
-                        <div class="filter-options">
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="0-50" class="filter-input">
-                                <span>Under $50</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="50-100" class="filter-input">
-                                <span>$50 - $100</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="100-200" class="filter-input">
-                                <span>$100 - $200</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="200-500" class="filter-input">
-                                <span>$200 - $500</span>
-                            </label>
-                            <label class="filter-option">
-                                <input type="radio" name="price" value="500-1000" class="filter-input">
-                                <span>Over $500</span>
-                            </label>
+                        <div class="filter-options" id="priceFiltersContainer">
+                            <!-- Price filters will be loaded here -->
                         </div>
-                        <button class="clear-filter-btn" id="clearPriceBtn">Clear price filter</button>
                     </div>
                 </aside>
 
@@ -171,7 +152,7 @@
                     <div class="mobile-filter-drawer">
                         <div class="mobile-filter-header">
                             <h2>FILTERS</h2>
-                            <button class="close-btn" id="closeFilterBtn">
+                            <button class="close-btn" id="closeMobileFilter">
                                 <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
@@ -181,35 +162,17 @@
                             <!-- Same filters as sidebar -->
                             <div class="filter-section">
                                 <h2 class="filter-heading">CATEGORY</h2>
-                                <div class="filter-options" id="mobileCategoryFilters">
+                                <div class="filter-options" id="mobileCategoriesContainer">
                                     <!-- Categories will be loaded here -->
                                 </div>
                             </div>
 
                             <div class="filter-section">
                                 <h2 class="filter-heading">PRICE</h2>
-                                <div class="filter-options">
-                                    <label class="filter-option">
-                                        <input type="radio" name="mobile-price" value="0-50" class="filter-input mobile-price-filter">
-                                        <span>Under $50</span>
-                                    </label>
-                                    <label class="filter-option">
-                                        <input type="radio" name="mobile-price" value="50-100" class="filter-input mobile-price-filter">
-                                        <span>$50 - $100</span>
-                                    </label>
-                                    <label class="filter-option">
-                                        <input type="radio" name="mobile-price" value="100-200" class="filter-input mobile-price-filter">
-                                        <span>$100 - $200</span>
-                                    </label>
-                                    <label class="filter-option">
-                                        <input type="radio" name="mobile-price" value="200-500" class="filter-input mobile-price-filter">
-                                        <span>$200 - $500</span>
-                                    </label>
-                                    <label class="filter-option">
-                                        <input type="radio" name="mobile-price" value="500-1000" class="filter-input mobile-price-filter">
-                                        <span>Over $500</span>
-                                    </label>
+                                <div class="filter-options" id="mobilePriceFiltersContainer">
+                                    <!-- Price filters will be loaded here -->
                                 </div>
+                                <button class="clear-filter-btn" id="clearMobileFilters">Clear filters</button>
                             </div>
                         </div>
                         <button class="show-results-btn" id="showResultsBtn">Show Results</button>
@@ -218,7 +181,7 @@
 
                 <!-- Product Grid -->
                 <div class="product-grid">
-                    <div class="products" id="productGrid">
+                    <div class="products" id="productsGrid">
                         <!-- Loading State -->
                         <div class="loading">Loading products...</div>
                     </div>
