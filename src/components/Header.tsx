@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex items-center justify-between py-3 sm:py-4">
           <div className="flex items-center gap-4 sm:gap-8">
             <Link href="/" className="text-xl sm:text-2xl font-bold text-gray-900">
-              SHOP.CO
+              Appscrip PLP Task.
             </Link>
             <nav className="hidden lg:flex items-center gap-6">
               <Link href="#" className="text-gray-700 hover:text-gray-900 transition-colors font-medium">Shop</Link>
