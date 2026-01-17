@@ -1,6 +1,10 @@
 import ProductListingPage from "@/components/ProductListingPage";
 import { Product } from "@/types";
 
+// Force dynamic rendering on Netlify
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 async function getProducts(): Promise<Product[]> {
   try {
     const res = await fetch('https://fakestoreapi.com/products', {

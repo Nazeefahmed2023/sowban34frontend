@@ -11,8 +11,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Ensure proper server-side rendering on Netlify
-  output: 'standalone',
 };
 
 export default nextConfig;
