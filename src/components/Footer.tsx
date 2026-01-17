@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12">
 
         {/* TOP SECTION */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           
           {/* Project Info */}
           <div>
@@ -18,6 +18,40 @@ export default function Footer() {
               Rendering (SSR), responsive design, and SEO best practices as part
               of the Appscrip frontend technical assessment.
             </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-sm font-semibold mb-3 uppercase">
+              Quick Links
+            </h4>
+            <ul className="text-gray-400 text-sm space-y-2">
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/shipping-policy" className="hover:text-white transition-colors">
+                  Shipping Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/returns" className="hover:text-white transition-colors">
+                  Returns & Refunds
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-and-conditions" className="hover:text-white transition-colors">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Tech Stack */}
